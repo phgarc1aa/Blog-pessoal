@@ -20,11 +20,6 @@ body {
             padding: 10px 20px;
         }
 
-        .nav-itens {
-            display: flex;
-            gap: 20px;
-        }
-
         .nav-itens a {
             color: #ffffff;
             text-decoration: none;
@@ -52,6 +47,12 @@ body {
   position: relative;
   text-align: center;
 }
+
+.topo img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 .nome {
   font-family: 'DM Serif Display', serif;
@@ -110,33 +111,29 @@ body {
 
 .galeria {
   display: flex;
-  justify-content: space-between;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 60px;
 }
 
 .galeria img {
-  width: 382px;
-  height: 292px;
+  width: calc(25% - 10px);
   object-fit: cover;
   border-radius: 4px;
 }
 
+
 .galeria-imagens {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 40px;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 60px;
 }
 
 .galeria-imagens img {
-  width: 352px;
-  height: 262px;
+  width: calc(25% - 10px);
   object-fit: cover;
   border-radius: 4px;
 }
