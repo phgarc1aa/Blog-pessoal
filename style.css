@@ -58,37 +58,30 @@ body {
 }
 
 .descricao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.descricao h1, .descricao h2 {
-  margin: 10px 0;
-}
-
-
-h1 {
+.descricao h1 {
   font-family: 'DM Serif Display', serif;
   font-style: italic;
   font-size: 45px;
   line-height: 52px;
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 10px 0;
 }
 
-h2 {
+.descricao h2 {
   font-family: 'DM Sans', sans-serif;
-  font-size: 72px;
+  font-size: 32px;
   font-weight: 600;
-  line-height: 80px;
-  letter-spacing: 3px;
-  text-transform: initial;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin: 10px 0;
 }
+
 
 .secao {
   display: flex;
@@ -148,4 +141,114 @@ h2 {
   width: calc(25% - 10px);
   object-fit: cover;
   border-radius: 4px;
+}
+
+/* RESPONSIVIDADE GERAL */
+
+@media (max-width: 1024px) {
+  .texto h3 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .texto p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .secao {
+    padding: 80px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .imagem img {
+    max-width: 90%;
+  }
+
+  .galeria img,
+  .galeria-imagens img {
+    width: calc(33.33% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .nav-itens a {
+    font-size: 14px;
+  }
+
+  #btnTema {
+    padding: 6px 10px;
+  }
+
+  .descricao h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .descricao h2 {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  .secao {
+    padding: 60px 20px;
+  }
+
+  .texto h3 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .texto p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .imagem img {
+    max-width: 100%;
+  }
+
+  .galeria img,
+  .galeria-imagens img {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .descricao h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .descricao h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .secao {
+    padding: 40px 10px;
+  }
+
+  .texto h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .texto p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .galeria img,
+  .galeria-imagens img {
+    width: calc(100% - 10px);
+  }
 }
