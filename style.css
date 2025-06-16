@@ -168,7 +168,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@@media (max-width: 768px) {
   nav {
     flex-wrap: wrap;
     padding: 10px;
@@ -188,6 +188,61 @@ body {
     left: 50%;
     top: 45%;
     transform: translate(-50%, -45%);
+  }
+
+  .descricao h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .descricao h2 {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+  }
+
+  .secao {
+    padding: 40px 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .texto h3 {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .texto p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .imagem img {
+    max-width: 100%;
+  }
+
+  .galeria img,
+  .galeria-imagens img {
+    width: calc(100% - 10px);
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .nav-itens a {
+    font-size: 14px;
+  }
+
+  #btnTema {
+    padding: 6px 10px;
+  }
+
+  .descricao {
+    padding: 0 10px;
   }
 
   .descricao h1 {
