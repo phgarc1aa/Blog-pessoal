@@ -60,9 +60,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff; /* pode trocar dependendo da imagem */
-  padding: 10px;
 }
 
 .descricao h1 {
